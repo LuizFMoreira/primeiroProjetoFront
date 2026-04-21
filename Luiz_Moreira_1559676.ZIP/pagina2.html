@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Séries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="html2.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="trabalho.html">
+                <img src="/imagens/kigi___3_-removebg-preview.png" alt="Logo"width="100">
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3" id="filtros">
+                <h3 class="text-white">Filtro de pesquisa</h3>
+                <div class="filtro">
+                    <label for="ano" class="form-label text-white">Ano:</label>
+                    <select class="form-select" id="ano">
+                        <option value="">Selecione</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="genero" class="form-label text-white">Gênero:</label>
+                    <select class="form-select" id="genero">
+                        <option value="">Selecione</option>
+                        <option value="acao">Ação</option>
+                        <option value="animacao">Animação</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedia">Comédia</option>
+                        <option value="fantasia">Fantasia</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="classificacao" class="form-label text-white">Classificação:</label>
+                    <select class="form-select" id="classificacao">
+                        <option value="">Selecione</option>
+                        <option value="livre">Livre</option>
+                        <option value="10">10 anos</option>
+                        <option value="12">12 anos</option>
+                        <option value="14">14 anos</option>
+                        <option value="16">16 anos</option>
+                        <option value="18">18 anos</option>
+                    </select>
+                </div>
+                <div class="btns">
+                    <button type="button" class="btn btn-primary">Limpar </button>
+                    <button type="button" class="btn btn-success">Aplicar</button>
+                </div>
+            </div>
+
+            <div class="col-md-9 series-container">
+                <div class="row row-cols-1 row-cols-md-3 g-4 series-row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/274512.jpg" class="card-img-top" alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">Prison Break</h5>
+                                <p class="card-text">Em Prison Break, após a prisão de Lincoln Burrows (Dominic Purcell), condenado por um crime que não cometeu e mandado para o corredor da morte, o engenheiro Michael Scofield (Wentworth Miller) bola um plano elaborado para tirar o irmão da cadeia..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/81JZUO74yYL._AC_UF1000,1000_QL80_.jpg.jpg" class="card-img-top"
+                                alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">The Walking Dead</h5>
+                                <p class="card-text">Em The Walking Dead, depois de ser baleado e passar meses em coma, o xerife Rick Grimes (Andrew Lincolm) acorda sozinho em um hospital deserto. Para sua surpresa, o mundo como conhecia deixou de existir depois que um perigoso vírus provoca uma infestação de zumbis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="pagina3.html"> <img src="/imagens/a casa do dragao.webp" class="card-img-top"
+                                    alt="Imagem da Série"> </a>
+                            <div class="card-body">
+                                <h5 class="card-title">House of The Dragons</h5>
+                                <p class="card-text">Baseada no livro Fogo & Sangue de George R. R. Martin, House of the Dragon é um spin-off de Game of Thrones que narra a história de conquista de terras em Westeros, mais conhecida como a Dança dos Dragões.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/fallout.webp" class="card-img-top" alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">Fallout</h5>
+                                <p class="card-text">Se passa em uma realidade pós-apocalíptica dos anos 50. Em uma construção do imaginário estadunidense após a Segunda Guerra Mundial onde o planeta sofre os impactos de uma guerra nuclear sob um pano de fundo retrofuturista, duzentos anos após o apocalipse nuclear, os mais ricos conseguiram fugir para luxuosos abrigos subterrâneos chamados de Safehouse, mas agora são forçados a deixar os bunkers e enfrentar uma realidade brutal e violenta onde a radiação é apenas uma das grandes ameaças.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/p8240480_b_v10_ab.jpg" class="card-img-top" alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">Sons of Anarchy</h5>
+                                <p class="card-text">Em Charming, uma pequena cidade fictícia no norte da Califórnia, nos Estados Unidos, habita o clube de motociclistas Sons of Anarchy. O grupo lida com atividades ilícitas como o tráfico de drogas e filmes pornô e é liderado por Clay Morrow (Ron Perlman) e Jax Teller (Charlie Hunnam). Além do esforço para conciliar a sua ocupação com a família e os filhos, eles tem de conviver com suas opiniões diferentes: enquanto Morrow opta pela tradição violenta, Teller se inspira no discurso revolucionário do diário de seu pai falecido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/peaky-blinders-design-template-1578f313b528f986cfe11691230859ef_screen.jpg"
+                                class="card-img-top" alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">Peaky Blinders</h5>
+                                <p class="card-text">Em Peaky Blinders, Thomas Shelby (Cillian Murphy) e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele é líder, controlam a cidade com mãos de ferro, construindo um império que vai desde corridas de cavalo adulteradas e roubo de carregamentos até parcerias secretas com os russos. Mas as ambições de Shelby se estendem para além de Birmingham, e ele não vai deixar que ninguém atrapalhe seus planos de se tornar um dos homens mais poderosos do Reino Unido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagens/The-Last-of-Us-1 (2).png" class="card-img-top" alt="Imagem da Série">
+                            <div class="card-body">
+                                <h5 class="card-title">The Last of Us</h5>
+                                <p class="card-text">Em um Estados Unidos pós-apocalíptico, Joel tem a missão de escoltar a jovem Ellie até um lugar seguro, longe dos zumbis e bandidos que assolam o país.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
